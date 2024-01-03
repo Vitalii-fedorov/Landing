@@ -5,7 +5,9 @@
 body {
   font-family: 'Allerta', sans-serif;
   background-image: url("../img/Background.png");
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-position: center center; */ }
 
 .banner {
   display: flex;
@@ -269,6 +271,20 @@ header {
               background: #731851;
               background: linear-gradient(180deg, #731851 0%, #5a0c37 100%); }
 
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 2rem; }
+  footer button {
+    background: none;
+    color: #803965;
+    outline: inherit;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: #803965;
+    line-height: 1.167; }
+
 @media (max-width: 4100px) {
   * {
     font-size: 32px; } }
@@ -316,9 +332,23 @@ header {
   .container {
     width: 60%;
     margin-left: 20%; } }
+@media (max-width: 1020px) {
+  header .header__navmenu {
+    margin-left: 15%; }
+
+  .container {
+    width: 70%;
+    margin-left: 15%; } }
 @media (max-width: 900px) {
   * {
     font-size: 12px; } }
+@media (max-width: 768px) {
+  header .header__navmenu {
+    margin-left: 10%; }
+
+  .container {
+    width: 80%;
+    margin-left: 10%; } }
 @media (max-width: 700px) {
   * {
     font-size: 11px; } }

@@ -7,6 +7,8 @@ body {
   font-family: 'Allerta', sans-serif;
   background-image: url('../img/Background.png');
   background-size: cover;
+  background-attachment: fixed;
+  /* background-position: center center; */
 }
 
 .banner {
@@ -317,6 +319,22 @@ header {
   }
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0 2rem;
+  button {
+    background: none;
+    color: #803965;
+    outline: inherit;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: rgb(128, 57, 101);
+    line-height: 1.167;
+  }
+}
+
 @media (max-width: 4100px) {
 *{
   font-size: 32px;
@@ -404,6 +422,16 @@ header {
   }
 }
 
+@media (max-width: 1020px) {
+  header .header__navmenu {
+    margin-left: 15%;
+  }
+  .container {
+    width: 70%;
+    margin-left: 15%;
+  }
+}
+
 @media (max-width: 900px) {
   *{
     font-size: 12px;
@@ -411,10 +439,13 @@ header {
 }
 
 @media (max-width: 768px) {
-  // .App {
-  //   margin-left: 5%;
-  //   margin-right: 5%;
-  // }
+  header .header__navmenu {
+    margin-left: 10%;
+  }
+  .container {
+    width: 80%;
+    margin-left: 10%;
+  }
 }
 
 @media (max-width: 700px) {
